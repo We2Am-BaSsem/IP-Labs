@@ -2,5 +2,5 @@
 a repo that contains the labs file and the last version of them to be delivered
 
 important:
-#Library Documentation
+<strong>Library Documentation</strong>
 https://scikit-image.org/
