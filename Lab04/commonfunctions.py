@@ -89,4 +89,4 @@ def showHist(img):
     plt.figure()
     imgHist = histogram(img, nbins=256)
     
-    bar(imgHist[1].astype(np.uint8), imgHist[0], width=0.8, align='center')
+    bar(imgHist[1]*255, imgHist[0], width=0.8, align='center')
