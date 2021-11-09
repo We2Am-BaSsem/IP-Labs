@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from skimage.exposure import histogram
 from matplotlib.pyplot import bar
-from skimage.color import rgb2gray,rgb2hsv
+from skimage.color import rgb2gray,rgb2hsv,rgba2rgb
 
 # Convolution:
 from scipy.signal import convolve2d
@@ -89,4 +89,4 @@ def showHist(img):
     plt.figure()
     imgHist = histogram(img, nbins=256)
     
-    bar(imgHist[1].astype(np.uint8), imgHist[0], width=0.8, align='center')
+    bar(imgHist[1]*255, imgHist[0], width=0.8, align='center')
