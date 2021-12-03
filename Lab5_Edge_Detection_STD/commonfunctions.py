@@ -16,10 +16,11 @@ from skimage.util import random_noise
 from skimage.filters import median
 from skimage.feature import canny
 
+from skimage.filters import gaussian
 
 
 # Edges
-from skimage.filters import sobel_h, sobel, sobel_v,roberts, prewitt
+from skimage.filters import sobel_h, sobel, sobel_v,roberts, prewitt, roberts
 
 # Show the figures / plots inside the notebook
 def show_images(images,titles=None):
